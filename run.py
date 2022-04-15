@@ -40,11 +40,11 @@ def about():
 def about_member(member_name):
     """
     Same as above functions.
-    Creates an empty directory to hold json data and for each object in data.
-    Advanced routing features of Flask:
+    Creates an empty object to store data.
+    Advanced routing features in Flask:
     - creates separate url (key) for each member inside the json file
     and returns url in individual member's name (value).
-    - creates a h1 heading with the member's name on the newly created page.
+    - returns the view for member.html for each member
     """
     member = {}
     with open("data/company.json", "r") as json_data:
@@ -52,7 +52,8 @@ def about_member(member_name):
         for obj in data:
             if obj["url"] == member_name:
                 member = obj
-    return "<h1>" + member["name"] + "</h1>"
+    #return "<h1>" + member["name"] + "</h1>"
+    return render_template("member.html", member=member)
 
 
 @app.route("/contact")
