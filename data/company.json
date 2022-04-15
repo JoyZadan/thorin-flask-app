@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Thorin Oakenshield",
+        "description": "Thorin II 'Oakenshield', eventually called King under the Mountain or Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of Five Armies.",
+        "image_source": "https://static.wikia.nocookie.net/lotr/images/f/fb/BzroIDYCYAMICdB.jpg"
+    },
+    {
+        "name": "Fili & Kili",
+        "description": "Fíli and Kíli were brothers, the youngest of the thirteen Dwarves who set out with Thorin Oakenshield's company, along with Gandalf and Bilbo Baggins, to reclaim the Lonely Mountain from the dragon Smaug.",
+        "image_source": "https://static.wikia.nocookie.net/lotr/images/b/b4/The-Hobbit-Fili-and-Kili.jpg"
+    }
+]
