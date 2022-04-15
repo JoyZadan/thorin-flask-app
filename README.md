@@ -43,7 +43,9 @@ Flask (Python web framework) mini project walkthrough from Code Institute.
 ## Credits
 ### Code
 ### Content
+* Text Content credit: https://lotr.fandom.com/wiki/
 ### Media
+* Images credit: https://lotr.fandom.com/wiki/
 
 ## Acknowledgements
 
