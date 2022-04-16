@@ -4,8 +4,12 @@ Imports the Flask class and creates an instance of this class
 import os
 import json
 from flask import Flask, render_template, request, flash
+if os.path.exists("env.py"):
+    import env
+
 
 app = Flask(__name__)
+app.secret_key = os.environ.get("SECRET_KEY")
 
 
 @app.route("/")
@@ -76,10 +80,11 @@ def contact():
     if request.method == "POST":
         # By using .get(), if the form doesn't actually have a key of 'name'
         # or 'email' for example, then it would display 'None' by default.
-        print(request.form.get("name"))
+        # print(request.form.get("name"))
         # by just using request.form[], if there isn't a 'name' or 'email' key
         # on our form, instead of returning 'None', it would throw an exception
-        print(request.form["email"])
+        # print(request.form["email"])
+
     return render_template("contact.html", page_title="Contact")
 
 
