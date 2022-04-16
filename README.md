@@ -1,6 +1,7 @@
 # Thorin Flask App
 
 Flask (Python web framework) mini project walkthrough from Code Institute.
+* [Heroku deployed app](https://thorin-flask-app-jz.herokuapp.com/)
 
 
 ## Table of Contents
