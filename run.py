@@ -56,12 +56,18 @@ def about_member(member_name):
     return render_template("member.html", member=member)
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
     """
     Renders content as HTML
     Flask will look inside of the templates directory or folder
     to find the HTML files referenced in the return, ie contact
+    By default, all of Flask's views will handle a GET request.
+    To start handling anything outside of that, ie, POST, DELETE or
+    PUT, we need to explicitly state that our route can accept those
+    methods. Adds another argument or list variable, methods(plural),
+    to remove the 405 server error and from the debugger in the terminal
+    we should get a 200 response.
     """
     return render_template("contact.html", page_title="Contact")
 
