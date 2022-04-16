@@ -3,7 +3,7 @@ Imports the Flask class and creates an instance of this class
 """
 import os
 import json
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash
 
 app = Flask(__name__)
 
