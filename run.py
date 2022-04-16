@@ -84,7 +84,8 @@ def contact():
         # by just using request.form[], if there isn't a 'name' or 'email' key
         # on our form, instead of returning 'None', it would throw an exception
         # print(request.form["email"])
-
+        flash("Thanks {}, we have received your message!".format(
+            request.form.get("name")))
     return render_template("contact.html", page_title="Contact")
 
 
